@@ -1,0 +1,30 @@
+{
+	"manifest_version": 2,
+
+	"name": "JankFrame",
+	"short_name": "JankFrame",
+	"description": "Shows jank on frame",
+	"version": "1.0.0",
+
+	"icons": {
+		"16": "assets/icon16.png",
+		"48": "assets/icon48.png",
+		"128": "assets/icon128.png"
+	},
+
+	"browser_action": {
+		"default_title": "Show jank"
+	},
+
+	"permissions": [
+		"activeTab"
+	],
+
+	"background": {
+		"scripts": [
+			"background.js"
+		],
+		"persistent": false
+	}
+
+}
